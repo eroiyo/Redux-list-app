@@ -2,7 +2,6 @@
   "env": {
     "browser": true,
     "es6": true,
-    "jquery": true,
     "jest": true
   },
   "parser": "@babel/eslint-parser",
@@ -19,12 +18,10 @@
     "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
     "react/react-in-jsx-scope": "off",
     "import/no-unresolved": "off",
-    "no-shadow": "off",
-    "no-console": "off",
-    "linebreak-style": 0,
-    "no-undef": "off",
-    "max-len": "off",
-    "import/extensions": "off"
+    "no-shadow": "off"
   },
-  "ignorePatterns": ["dist/", "build/"]
+  "ignorePatterns": [
+    "dist/",
+    "build/"
+  ]
 }
