@@ -9,15 +9,14 @@ export const shop = () => ({
 
 export const Setshop = (payload) => ({
   type: SET_SHOP,
-  payload,
+  payload
 });
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case GET_SHOP:
-      return state;
-    case SET_SHOP:
-      return action.payload;
+    case SET_SHOP: {
+      return [...state, ...action.payload];
+    }
     default:
       return state;
   }
