@@ -12,10 +12,10 @@ export const Setproducts = (payload) => ({
   payload,
 });
 
-const reducer = (state = initialState, action) => {
+const  reducer = (state = initialState, action) => {
   switch (action.type) {
     case SET_PRODUCTS: {
-      state.set(action.payload.key, action.payload.value);
+    state.set(action.payload.string ,action.payload.value);
       return state;
     }
     case GET_PRODUCTS: {

@@ -11,7 +11,7 @@ export const loadCategorys = async () => {
     return categorys
   };
 
-export const LoadproductsByCategory = async () => {
+export const LoadproductsByCategory = async (string) => {
   const category = await axios.get(`${baseURL}products/category/${string}`)
     .then((res) => {
       const result = res.data;

@@ -2,32 +2,28 @@
 import { useSelector, useDispatch } from 'react-redux';
 import React, { useEffect } from 'react';
 import { LoadproductsByCategory } from '../../ShopApi';
+import { Setproducts } from '../../redux/reducers/products';
 
 const Category = () => {
   const products = useSelector((state) => state.products);
   const dispatch = useDispatch();
+  let items = [];
 
+   useEffect(async () => {
+    const result = await LoadproductsByCategory('jewelery');
+    const completeresult = {value: result, string: 'jewelery' };
+    dispatch(Setproducts(completeresult));
+  }, []);
+  sleep(1000);
   console.log(products);
 
-  useEffect(() => {
-    LoadproductsByCategory(dispatch, 'jewelery');
-  }, []);
-  const items = products.get('jewelery');
-  console.log(items);
-  if (items === undefined) {
-    return (
-      <div className="Category">
-        <div />
-      </div>
-    );
-  }
   return (
     <div className="Category">
       <div>
         {' '}
         {items.map((item) => (
           <div key={item.id}>
-            {item.name}
+            {item.title}
             {' '}
           </div>
         ))}
