@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg1023"
+   version="1.1"
+   viewBox="0 0 35.082848 63.717487"
+   height="63.717487mm"
+   width="35.082848mm">
+  <defs
+     id="defs1017" />
+  <metadata
+     id="metadata1020">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-83.000256,-116.21864)"
+     id="layer1">
+    <path
+       style="color:#ffffff;fill:#ffffff;stroke-width:0.26458332"
+       id="Chevron_Right_1_"
+       d="M 117.15161,145.80329 88.498033,117.15923 c -1.2573,-1.25412 -3.294327,-1.25412 -4.554802,0 -1.2573,1.25413 -1.2573,3.29115 0,4.54528 l 26.380809,26.37128 -26.377634,26.37129 c -1.2573,1.25412 -1.2573,3.29115 0,4.54845 1.2573,1.25413 3.297502,1.25413 4.554802,0 l 28.653582,-28.64406 c 1.23825,-1.24116 1.23825,-3.3102 -0.003,-4.54818 z" />
+  </g>
+</svg>

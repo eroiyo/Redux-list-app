@@ -11,24 +11,19 @@ const Category = (props) => {
   let items = [];
 
   useEffect(async () => {
-    const result = await LoadproductsByCategory(category)
+    let result;
+    if (products.get(category) === undefined) {
+      result = await LoadproductsByCategory(category);
+    }
     dispatch(Setproducts(result));
   }, []);
   if (products.get(category) !== undefined) {
     items = products.get(category);
   }
-  console.log(products);
   return (
     <div className="Category">
-      <div>
-        {' '}
-        {items.map((item) => (
-          <div key={item.id}>
-            {item.title}
-            {' '}
-          </div>
-        ))}
-      </div>
+      <h2 className="cat-title">{category}</h2>
+      <p className="num-products">{items.length}</p>
     </div>
   );
 };
