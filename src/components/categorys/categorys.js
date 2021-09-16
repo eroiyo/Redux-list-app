@@ -1,3 +1,4 @@
+import './Categorys.css';
 import { useSelector, useDispatch } from 'react-redux';
 import React, { useEffect } from 'react';
 import { loadCategorys } from '../../ShopApi';

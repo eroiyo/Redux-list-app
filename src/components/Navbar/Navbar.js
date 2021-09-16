@@ -15,7 +15,7 @@ function Navbar() {
         >
           <img alt="return" src={next} className="arrow-left" />
         </Link>
-        <h6 className="header-title">Categorys</h6>
+        <h6 className="header-title">FakeShop</h6>
         <img src={mic} alt="mic" className="mic" />
         <img src={settings} alt="settings" className="settings" />
       </div>

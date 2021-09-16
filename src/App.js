@@ -6,7 +6,11 @@ import Displayer from './components/Displayer/Displayer';
 import Separator from './components/Separator/Separator';
 
 
-const App = () => (
+const App = () => { 
+  
+  
+  
+  return (
   <div className="App">
     <div className="container">
     <BrowserRouter>
@@ -20,5 +24,6 @@ const App = () => (
       
     </div>
   </div>
-);
+)
+}
 export default App;

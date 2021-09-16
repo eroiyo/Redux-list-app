@@ -5,7 +5,7 @@ function Separator() {
   return (
     <div className="Separator">
       <div className="inside">
-      <h6 className="header-title">Categorys</h6>
+      <h6 className="header-title separator-title">Categorys</h6>
       </div>
     </div>
   );
