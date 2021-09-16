@@ -8,8 +8,8 @@ export const loadCategorys = async () => {
       const result = res.data;
       return result;
     });
-    return categorys
-  };
+  return categorys;
+};
 
 export const LoadproductsByCategory = async (string) => {
   const category = await axios.get(`${baseURL}products/category/${string}`)
@@ -17,5 +17,5 @@ export const LoadproductsByCategory = async (string) => {
       const result = res.data;
       return result;
     });
-    return category
+  return { value: category, key: string };
 };

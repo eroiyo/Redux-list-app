@@ -7,7 +7,10 @@ const App = () => {
   return (
     <div className="App">
       <Categorys />
-      <Category />
+      <Category category="electronics"/>
+      <Category category="jewelery"/>
+      <Category category="men's clothing"/>
+      <Category category="women's clothing"/>
     </div>
   );
 }

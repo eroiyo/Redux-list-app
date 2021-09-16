@@ -2,7 +2,6 @@ import { useSelector, useDispatch } from 'react-redux';
 import React, { useEffect } from 'react';
 import { loadCategorys } from '../../ShopApi';
 import { Setshop } from '../../redux/reducers/shop';
-import produce from 'immer';
 
 const Categorys = () => {
   const categorys = useSelector((state) => state.shop);

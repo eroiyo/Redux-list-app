@@ -4,19 +4,20 @@ import React, { useEffect } from 'react';
 import { LoadproductsByCategory } from '../../ShopApi';
 import { Setproducts } from '../../redux/reducers/products';
 
-const Category = () => {
+const Category = (props) => {
+  const { category } = props;
   const products = useSelector((state) => state.products);
   const dispatch = useDispatch();
   let items = [];
 
-   useEffect(async () => {
-    const result = await LoadproductsByCategory('jewelery');
-    const completeresult = {value: result, string: 'jewelery' };
-    dispatch(Setproducts(completeresult));
+  useEffect(async () => {
+    const result = await LoadproductsByCategory(category)
+    dispatch(Setproducts(result));
   }, []);
-  sleep(1000);
+  if (products.get(category) !== undefined) {
+    items = products.get(category);
+  }
   console.log(products);
-
   return (
     <div className="Category">
       <div>

@@ -12,11 +12,12 @@ export const Setproducts = (payload) => ({
   payload,
 });
 
-const  reducer = (state = initialState, action) => {
+const reducer = (state = initialState, action) => {
   switch (action.type) {
     case SET_PRODUCTS: {
-    state.set(action.payload.string ,action.payload.value);
-      return state;
+      const clone = new Map(state)
+      clone.set(action.payload.key, action.payload.value);
+      return clone;
     }
     case GET_PRODUCTS: {
       return state;
