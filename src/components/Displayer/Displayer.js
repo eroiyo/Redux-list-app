@@ -1,14 +1,13 @@
 import { useSelector, useDispatch } from 'react-redux';
 import './Displayer.css';
 import React from 'react';
-import M from '../../imgs/m.svg';
-import Category from '../category/Category';
+import S from '../../imgs/s.svg';
 
-function Displayer() {
+function Displayer(props) {
+  const { show } =props;
   const state = useSelector((state) => state);
   const dispatch = useDispatch();
   let total = 0;
-
   if (state.products !== undefined) {
     state.shop.forEach((category) => {
       const number = state.products.get(category);
@@ -17,13 +16,28 @@ function Displayer() {
     });
   }
 
+  if(show === undefined) {
   return (
     <div className="Displayer">
-      <div className="display-b img filtered"><img src={M} /></div>
+      <div className="display-b img filtered"><img src={S} /></div>
       <div className="display-b text">
         <h1>FakeShop</h1>
         <p>
           {total}
+          {' '}
+          Results
+        </p>
+      </div>
+    </div>
+  );
+  }
+  return (
+    <div className="Displayer">
+      <div className="display-b img filtered"><img src={show.img} /></div>
+      <div className="display-b text">
+        <h1>show.cat</h1>
+        <p>
+          {show.total}
           {' '}
           Results
         </p>
