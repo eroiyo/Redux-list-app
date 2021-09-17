@@ -35,7 +35,7 @@ function Displayer(props) {
     <div className="Displayer">
       <div className="display-b img filtered"><img src={show.img} /></div>
       <div className="display-b text">
-        <h1>show.cat</h1>
+        <h1>{show.cat}</h1>
         <p>
           {show.total}
           {' '}
@@ -46,7 +46,7 @@ function Displayer(props) {
   );
 }
 
-Displayer.displayName = 'Screen';
+Displayer.displayName = 'Displayer';
 
 Displayer.defaultProps = {
   total: '0',

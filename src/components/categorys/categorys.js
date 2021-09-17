@@ -9,9 +9,10 @@ import M from '../../imgs/m.svg';
 import E from '../../imgs/e.svg';
 import J from '../../imgs/j.svg';
 
-const images = new Map([["electronics", E], ["jewelery", J], ["men's clothing", M], ["women's clothing", W]])
+const images = new Map([['electronics', E], ['jewelery', J], ["men's clothing", M], ["women's clothing", W]]);
 
-const Categorys = () => {
+const Categorys = (props) => {
+  const { setData } = props;
   const categorys = useSelector((state) => state.shop);
   const dispatch = useDispatch();
 
@@ -22,8 +23,8 @@ const Categorys = () => {
 
   return (
     <div className="Categorys">
-      {categorys.map((cat) => (
-          <Category category={cat} image={images.get(cat)} />
+      {categorys.map((cat, index) => (
+        <Category key={`category${index}`} category={cat} image={images.get(cat)} setData={setData} />
       ))}
       {' '}
     </div>

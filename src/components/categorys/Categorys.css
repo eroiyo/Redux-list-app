@@ -12,6 +12,7 @@
     background-color: #2b4570;
     width: 100%;
     height: 100%;
+    text-align: right;
 }
 
 .Category:nth-child(1) {
@@ -22,7 +23,7 @@
 }
 
 .cat-title {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .cat-image-container {
@@ -39,4 +40,16 @@
 .imgcategory{
     width: 98%;
     max-height: 80px;
+}
+
+.cat-title{
+    color: white;
+    margin-bottom: 1px;
+    margin-right: 20px;
+}
+
+.num-products{
+    margin-top: 2px;
+    margin-right: 20px;
+    font-size: 18px;
 }
