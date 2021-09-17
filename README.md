@@ -1,78 +1,72 @@
-#  Space Travelers' Hub
+# React Shop App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project have been developed using react and redux, to practice with router nad
 
-![localhost_3000_ (2)](https://user-images.githubusercontent.com/65068771/132509636-950e7649-8214-4b06-a2cc-ff48b1e73744.png)
 
-## [Demo](https://traveler-shub.netlify.app/)
+## Live demostration
 
-### [Demostration video](https://youtu.be/WpS9uUggxTQ)
+- Here is a short [Live Demostration]()
 
-## Built With
+## Languages and tools
 
-This project is build with:
+- HTML
+- CSS
+- Javascript
+- React
+- Redux
 
-- ![HTML5](https://img.shields.io/badge/-HTML5-000000?style=flat&logo=html5&logoColor=ffffff&labelColor=E34F26), ![CSS3](https://img.shields.io/badge/-CSS3-000000?style=flat&logo=css3&logoColor=ffffff&labelColor=1572B6), ![Sass](https://img.shields.io/badge/-Sass-000000?style=flat&logo=sass&logoColor=ffffff&labelColor=%23CC6699)
-- ![JavaScript](https://img.shields.io/badge/-JavaScript-000000?style=flat&logo=javascript)
-- ![React](https://img.shields.io/badge/-React-000000?style=flat&logo=react)
+## Available Scripts
 
-## Getting Started
+In the project directory, you can run:
 
-To get the content of this project locally you need to run this command in your terminal:
+### `npm start`
 
-- `git clone https://github.com/andersonlebon/Space-Travelers-Hub.git`
-- `cd Space-Travelers-Hub`
-- Use `npm start` to run the app in live server
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Test
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-For tracking linter errors locally you need to follow these steps:
+### `npm test`
 
-- After cloning the project you need to run this command
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-  > `npm install`
-  > This command will download all the dependancies of the project
+### `npm run build`
 
-- For tracking the linter errors in HTML file run:
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-  > `npx hint .`
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-- For tracking the linter errors in CSS file run:
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-  > `npx stylelint "\*_/_.{css,scss}"`
+## 🤝 Contributing
 
-- And For tracking the linter errors in JavaScript file run:
+Original design idea by Nelson Sakwa there is he's [Behance](https://www.behance.net/sakwadesignstudio), Thanks to she we have this amazing layout, please go to he's site and give some love to he's works!
 
-  > `npx eslint .`
+Contributions, issues, and feature requests are welcome!
 
-- Use `npm run build` to run the app in live server
 
 ## Authors
 
-👤 **Anderson Caleb**
-
-- GitHub: [@Adersonlebon](https://github.com/andersonlebon)
-- Twitter: [@BuyananaCaleb](https://twitter.com/BuyananaCaleb)
-- LinkedIn: [Anderson Caleb](https://www.linkedin.com/in/anderson-caleb-915343209/)
-
 👤 **Arturo Ortega**
 
-- GitHub: [@eroiyo](https://github.com/eroiyo)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/carlos-arturo-ortega-guanipa-39a1a5204/)
-
-
-## :handshake: Contributing
-
-Feel free to check the [issues page](https://github.com/andersonlebon/Space-Travelers-Hub/issues)
-
-## Show your support
-
-Give a :star: if you like this project!
+- Github: [@eroiyo](https://github.com/eroiro)
+- Linkedin: [Arturo Ortega](https://www.linkedin.com/in/carlos-arturo-ortega-guanipa-39a1a5204/)
 
 ## Acknowledgments
 
-- Thanks to everyone who will get time to check this code especially to code reviewers.
+Microverse
+
+Nelson Sakwa
+
+## Show your support
+
+Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](https://github.com/microverseinc/readme-template/blob/master/MIT.md) licensed.
+This project is under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/") licensed.
+

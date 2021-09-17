@@ -15,7 +15,7 @@ const List = (props) => {
   if (show !== undefined) {
     category = show.cat.toLowerCase();
     if (products.get(category) !== undefined) {
-    // eslint-disable-next-line semi
+      // eslint-disable-next-line semi
       items = products.get(category)
     }
   } else {
@@ -31,9 +31,10 @@ const List = (props) => {
 
   return (
     <div className="List">
-      {items.map((product) => (
-        <div>
-          {product.title}
+      {items.map((product, index) => (
+        <div class="list-item" key={"list" + category + index}>
+          <p className="list-item-name">{product.title}</p>
+          <p className="list-item-price">{product.price+"$"}</p>
         </div>
       ))}
       {' '}
