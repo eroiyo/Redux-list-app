@@ -18,12 +18,17 @@
 .Category:nth-child(1) {
   background-color: #4c61a9;
 }
+
 .Category:nth-child(4) {
   background-color: #4c61a9;
 }
 
+
 .cat-title {
   font-size: 18px;
+  color: white;
+  margin-bottom: 1px;
+  margin-right: 20px;
 }
 
 .cat-image-container {
@@ -39,12 +44,6 @@
 .imgcategory {
   width: 98%;
   max-height: 80px;
-}
-
-.cat-title {
-  color: white;
-  margin-bottom: 1px;
-  margin-right: 20px;
 }
 
 .num-products {

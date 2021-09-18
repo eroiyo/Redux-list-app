@@ -1,6 +1,7 @@
 import './List.css';
 import { useSelector, useDispatch } from 'react-redux';
 import React, { useEffect } from 'react';
+import Proptypes from 'prop-types';
 import { Redirect } from 'react-router-dom';
 import { LoadproductsByCategory } from '../../ShopApi';
 import { Setproducts } from '../../redux/reducers/products';
@@ -31,8 +32,8 @@ const List = (props) => {
 
   return (
     <div className="List">
-      {items.map((product, index) => (
-        <div className="list-item" key={`list${category}${index}`}>
+      {items.map((product) => (
+        <div className="list-item" key={`list${category}${product.id}`}>
           <p className="list-item-name">{product.title}</p>
           <p className="list-item-price">{`${product.price}$`}</p>
         </div>
@@ -42,4 +43,19 @@ const List = (props) => {
   );
 };
 
+List.displayName = 'Displayer';
+
+List.defaultProps = {
+  show: undefined,
+};
+
+List.propTypes = {
+  show: Proptypes.shape(
+    {
+      cat: Proptypes.string,
+      total: Proptypes.number,
+      img: Proptypes.string,
+    },
+  ),
+};
 export default List;

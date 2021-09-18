@@ -1,6 +1,7 @@
 import './Navbar.css';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { propTypes } from 'react-bootstrap/esm/Image';
 import mic from '../../imgs/microphone.svg';
 import next from '../../imgs/next.svg';
 import settings from '../../imgs/settings.svg';
@@ -16,11 +17,13 @@ function Navbar(props) {
     <nav className="navBar">
       <div className="header">
         <Link
+          onKeyDown={handleClick}
+          onClick={handleClick}
           key="home"
           to={`${process.env.PUBLIC_URL}/`}
           active="true"
         >
-          <img alt="return" src={next} className="arrow-left" onClick={handleClick} />
+          <img alt="return" src={next} className="arrow-left" />
         </Link>
         <h6 className="header-title">FakeShop</h6>
         <img src={mic} alt="mic" className="mic" />
@@ -29,4 +32,13 @@ function Navbar(props) {
     </nav>
   );
 }
+Navbar.displayName = 'Navbar';
+
+Navbar.defaultProps = {
+  setData: undefined,
+};
+
+Navbar.propTypes = {
+  setData: propTypes.func,
+};
 export default Navbar;

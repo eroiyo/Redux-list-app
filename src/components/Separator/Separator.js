@@ -1,10 +1,10 @@
 import './Separator.css';
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Proptypes from 'prop-types';
 
 function Separator(props) {
   const { show } = props;
-  if (show == undefined) {
+  if (show === undefined) {
     return (
       <div className="Separator">
         <div className="inside">
@@ -21,4 +21,20 @@ function Separator(props) {
     </div>
   );
 }
+
+Separator.displayName = 'Displayer';
+
+Separator.defaultProps = {
+  show: undefined,
+};
+
+Separator.propTypes = {
+  show: Proptypes.shape(
+    {
+      cat: Proptypes.string,
+      total: Proptypes.number,
+      img: Proptypes.string,
+    },
+  ),
+};
 export default Separator;
