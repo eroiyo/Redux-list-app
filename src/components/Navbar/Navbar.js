@@ -2,15 +2,15 @@ import './Navbar.css';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import mic from '../../imgs/microphone.svg';
-import next from '../../imgs/next.svg'
-import settings from '../../imgs/settings.svg'
+import next from '../../imgs/next.svg';
+import settings from '../../imgs/settings.svg';
+
 function Navbar(props) {
+  const { setData } = props;
 
-  const { setData } =props;
-
-  const handleClick = () =>{
+  const handleClick = () => {
     setData(undefined);
-  }
+  };
 
   return (
     <nav className="navBar">

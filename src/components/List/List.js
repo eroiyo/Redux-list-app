@@ -1,9 +1,9 @@
 import './List.css';
 import { useSelector, useDispatch } from 'react-redux';
 import React, { useEffect } from 'react';
+import { Redirect } from 'react-router-dom';
 import { LoadproductsByCategory } from '../../ShopApi';
 import { Setproducts } from '../../redux/reducers/products';
-import { Redirect } from "react-router-dom";
 
 const List = (props) => {
   const { show } = props;
@@ -19,7 +19,7 @@ const List = (props) => {
       items = products.get(category)
     }
   } else {
-    return <Redirect to={"/"} />
+    return <Redirect to="/" />;
   }
   useEffect(async () => {
     let result;
@@ -32,9 +32,9 @@ const List = (props) => {
   return (
     <div className="List">
       {items.map((product, index) => (
-        <div class="list-item" key={"list" + category + index}>
+        <div className="list-item" key={`list${category}${index}`}>
           <p className="list-item-name">{product.title}</p>
-          <p className="list-item-price">{product.price+"$"}</p>
+          <p className="list-item-price">{`${product.price}$`}</p>
         </div>
       ))}
       {' '}

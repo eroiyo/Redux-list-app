@@ -10,12 +10,12 @@ export const Getshop = () => ({
 
 export const Setshop = (payload) => ({
   type: SET_SHOP,
-  payload
+  payload,
 });
 
 export const Addshop = (payload) => ({
   type: ADD_SHOP,
-  payload
+  payload,
 });
 
 const reducer = (state = initialState, action) => {

@@ -15,7 +15,7 @@ export const Setproducts = (payload) => ({
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case SET_PRODUCTS: {
-      const clone = new Map(state)
+      const clone = new Map(state);
       clone.set(action.payload.key, action.payload.value);
       return clone;
     }
