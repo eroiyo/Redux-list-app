@@ -10,7 +10,7 @@ This project have been developed using react and redux, to practice with router 
 
 ## Live demostration
 
-- If you want to visit the live demo, you can click [here](fakeshop-app.netlify.app)
+- If you want to visit the live demo, you can click [here](https://fakeshop-app.netlify.app/)
 ## Languages and tools
 
 - HTML
