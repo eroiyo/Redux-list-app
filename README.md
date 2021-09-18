@@ -5,7 +5,7 @@ This project have been developed using react and redux, to practice with router 
 
 ## Live demostration
 
-- Here is a short [Live Demostration](https://www.loom.com/share/05fbe43aef324dc1986c1d4d7565fec1)
+- Here is a short [Video Demostration](https://www.loom.com/share/05fbe43aef324dc1986c1d4d7565fec1)
 
 
 ## Live demostration
