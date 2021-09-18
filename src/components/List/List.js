@@ -16,8 +16,7 @@ const List = (props) => {
   if (show !== undefined) {
     category = show.cat.toLowerCase();
     if (products.get(category) !== undefined) {
-      // eslint-disable-next-line semi
-      items = products.get(category)
+      items = products.get(category);
     }
   } else {
     return <Redirect to="/" />;
