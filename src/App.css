@@ -1,28 +1,20 @@
-*{
+* {
   color: white;
-  font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
-
+  font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
 }
 
-body{
+body {
   margin: 0;
 }
 
-.App{
+.App {
   display: flex;
   background-color: #568ce4;
   width: 100vw;
   height: 100vh;
 }
 
-.other {
-  background-color: #0e203d;
-  background-color: #4c61a9;
-  background-color: #35548b;
-
-}
-
-.container{
+.container {
   display: flex;
   flex-direction: column;
   width: 100vw;
@@ -30,5 +22,7 @@ body{
 }
 
 .filtered {
-  filter: invert(12%) sepia(45%) saturate(1041%) hue-rotate(181deg) brightness(92%) contrast(100%);
+  filter:
+    invert(12%) sepia(45%) saturate(1041%) hue-rotate(181deg)
+    brightness(92%) contrast(100%);
 }

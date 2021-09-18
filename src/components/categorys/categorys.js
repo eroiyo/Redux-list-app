@@ -1,9 +1,11 @@
+/* eslint-disable import/extensions */
 import './Categorys.css';
 import { useSelector, useDispatch } from 'react-redux';
 import React, { useEffect } from 'react';
+import Proptypes from 'prop-types';
 import { loadCategorys } from '../../ShopApi';
 import { Setshop } from '../../redux/reducers/shop';
-import Category from '../category/Category';
+import Category from '../category/Category.js';
 import W from '../../imgs/w.svg';
 import M from '../../imgs/m.svg';
 import E from '../../imgs/e.svg';
@@ -23,12 +25,22 @@ const Categorys = (props) => {
 
   return (
     <div className="Categorys">
-      {categorys.map((cat, index) => (
-        <Category key={`category${index}`} category={cat} image={images.get(cat)} setData={setData} />
+      {categorys.map((cat) => (
+        <Category key={cat} category={cat} image={images.get(cat)} setData={setData} />
       ))}
       {' '}
     </div>
   );
+};
+
+Categorys.displayName = 'Categorys';
+
+Categorys.defaultProps = {
+  setData: undefined,
+};
+
+Categorys.propTypes = {
+  setData: Proptypes.func,
 };
 
 export default Categorys;

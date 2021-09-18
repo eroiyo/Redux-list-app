@@ -1,12 +1,12 @@
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import './Displayer.css';
 import React from 'react';
+import Proptypes from 'prop-types';
 import S from '../../imgs/s.svg';
 
 function Displayer(props) {
   const { show } = props;
   const state = useSelector((state) => state);
-  const dispatch = useDispatch();
   let total = 0;
   if (state.products !== undefined) {
     state.shop.forEach((category) => {
@@ -18,7 +18,7 @@ function Displayer(props) {
   if (show === undefined) {
     return (
       <div className="Displayer">
-        <div className="display-b img filtered"><img src={S} /></div>
+        <div className="display-b img filtered"><img alt="displayer" src={S} /></div>
         <div className="display-b text">
           <h1>FakeShop</h1>
           <p>
@@ -32,7 +32,7 @@ function Displayer(props) {
   }
   return (
     <div className="Displayer">
-      <div className="display-b img filtered"><img src={show.img} /></div>
+      <div className="display-b img filtered"><img alt={`displayer-${show.cat}`} src={show.img} /></div>
       <div className="display-b text">
         <h1>{show.cat}</h1>
         <p>
@@ -48,8 +48,17 @@ function Displayer(props) {
 Displayer.displayName = 'Displayer';
 
 Displayer.defaultProps = {
-  total: '0',
+  show: undefined,
+};
 
+Displayer.propTypes = {
+  show: Proptypes.shape(
+    {
+      cat: Proptypes.string,
+      total: Proptypes.number,
+      img: Proptypes.string,
+    },
+  ),
 };
 
 export default Displayer;
