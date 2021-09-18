@@ -1,0 +1,28 @@
+* {
+  color: white;
+  font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  background-color: #568ce4;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+.filtered {
+  filter:
+    invert(12%) sepia(45%) saturate(1041%) hue-rotate(181deg)
+    brightness(92%) contrast(100%);
+}
