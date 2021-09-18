@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import React, { useEffect } from 'react';
 import { loadCategorys } from '../../ShopApi';
 import { Setshop } from '../../redux/reducers/shop';
-import Category from '../category/Category';
+import Category from '../category/category';
 import W from '../../imgs/w.svg';
 import M from '../../imgs/m.svg';
 import E from '../../imgs/e.svg';
