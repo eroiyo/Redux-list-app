@@ -1,7 +1,7 @@
 import './Navbar.css';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { propTypes } from 'react-bootstrap/esm/Image';
+import Proptypes from 'prop-types';
 import mic from '../../imgs/microphone.svg';
 import next from '../../imgs/next.svg';
 import settings from '../../imgs/settings.svg';
@@ -39,6 +39,6 @@ Navbar.defaultProps = {
 };
 
 Navbar.propTypes = {
-  setData: propTypes.func,
+  setData: Proptypes.func,
 };
 export default Navbar;

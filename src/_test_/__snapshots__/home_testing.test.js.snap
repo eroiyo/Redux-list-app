@@ -17,11 +17,11 @@ exports[`Take a snaphot, and compared it, to see if they are equal 1`] = `
           active="true"
           href="/"
           onClick={[Function]}
+          onKeyDown={[Function]}
         >
           <img
             alt="return"
             className="arrow-left"
-            onClick={[Function]}
             src="next.svg"
           />
         </a>
@@ -49,6 +49,7 @@ exports[`Take a snaphot, and compared it, to see if they are equal 1`] = `
         className="display-b img filtered"
       >
         <img
+          alt="displayer"
           src="s.svg"
         />
       </div>
