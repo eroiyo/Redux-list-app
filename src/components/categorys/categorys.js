@@ -4,7 +4,7 @@ import React, { useEffect } from 'react';
 import Proptypes from 'prop-types';
 import { loadCategorys } from '../../ShopApi';
 import { Setshop } from '../../redux/reducers/shop';
-import Category from '../category/Category.js';
+import Category from '../category/Category';
 import W from '../../imgs/w.svg';
 import M from '../../imgs/m.svg';
 import E from '../../imgs/e.svg';
