@@ -1,4 +1,3 @@
-/* eslint-disable import/extensions */
 import './Categorys.css';
 import { useSelector, useDispatch } from 'react-redux';
 import React, { useEffect } from 'react';
