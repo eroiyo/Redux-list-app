@@ -3,7 +3,7 @@ import {
   Redirect, Route, BrowserRouter, Switch,
 } from 'react-router-dom';
 import './App.css';
-import Categorys from './components/categorys/Categorys';
+import Categorys from './components/categorys/categorys';
 import Navbar from './components/Navbar/Navbar';
 import Displayer from './components/Displayer/Displayer';
 import Separator from './components/Separator/Separator';
