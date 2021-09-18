@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test the Separator component should match the snapshot 1`] = `
+<div
+  className="Separator"
+>
+  <div
+    className="inside"
+  >
+    <h6
+      className="header-title separator-title"
+    />
+  </div>
+</div>
+`;
