@@ -1,10 +1,10 @@
 import './Navbar.css';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Proptypes from 'prop-types';
 import mic from '../../imgs/microphone.svg';
 import next from '../../imgs/next.svg';
 import settings from '../../imgs/settings.svg';
-import Proptypes from 'prop-types';
 
 function Navbar(props) {
   const { setData } = props;
