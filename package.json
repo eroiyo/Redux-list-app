@@ -25,6 +25,10 @@
     "redux-thunk": "^2.3.0",
     "web-vitals": "^1.1.2"
   },
+
+  "transform": {
+    "\\.js$": "<rootDir>/node_modules/babel-jest"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
